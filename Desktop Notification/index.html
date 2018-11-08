@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML5 Notifications</title>
+</head>
+<body>
+    <input type="text" id="txt" />
+    <input type="button"  value="Show as Notification"/>
+    <input type="button" value="Show Random Notification"/>
+    <input type="button" value="Show Random Notification (with icons)"/>
+
+    <script>
+function ShowTextAsNotification() {
+    ShowNotification("Custom Notification", document.getElementById("txt").value);
+}
+  
+function GetRandomText(ico) {
+    var Quotes = ["Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+                  "Copy and paste is a design error.",
+                  "I had a life once. Now I have a computer.",
+                  "Before software can be reusable it first has to be usable.",
+                  "Software sucks because users demand it to."];
+  
+    if (ico == false) {
+        ShowNotification("Famous Quotes", Quotes[Math.floor(Math.random() * (1 - 5 + 1) + 5)]);
+    }
+    else {
+        ShowNotificationsWithIcons("Famous Quotes", Quotes[Math.floor(Math.random() * (1 - 5 + 1) + 5)]);
+    }
+}
+function ShowNotification(title, body) {
+    Notification.requestPermission(function (perm) {
+        if (perm == "granted") {
+            var notification = new Notification(title, { body: body });
+            //Un-comment the below line if you want to close the notification after a certain period
+            //It not working on Chrome...I don't know why!!
+            //notification.onshow = function () {
+            //    setTimeout(notification.close, 5000)
+            //}
+        }
+    });
+}
+function ShowNotificationsWithIcons(title, body) {
+    Notification.requestPermission(function (perm) {
+        if (perm == "granted") {
+            var notification = new Notification(title, { icon: "Bomber.ico", body: body });
+        }
+    });
+}
+</script>
+</body>
+</html>

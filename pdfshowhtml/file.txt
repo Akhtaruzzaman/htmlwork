@@ -1,0 +1,59 @@
+﻿Accounting Learning
+
+
+From Account		- Credit
+To Account		- Debit
+
+
+Out			- Credit
+In 			- Debit
+
+
+
+Income  == 		
+			Total Credit - Total Debit
+
+Expenses  == 		
+			Total Debit - Total Credit
+
+Asset  == 		
+			Total Credit - Total Debit
+
+Liabilities  == 		
+			Total Debit - Total Debit
+
+Equity  == 		
+			Total Debit - Total Debit
+
+
+
+
+Income Statement Report:
+		
+			Total Income- Total Expenses
+
+
+7.1: Operating income = Gross income - (operating expenses + depreciation)
+7.2: EBIT = Revenue - operating expenses (EBIT: Earnings Before Interest and Taxes)
+7.3: Net income = Total income - depreciation, interest, tax liabilities and other expenses.
+7.4: Cash flow = Net income + depreciation +/- other charges to income
+
+
+
+
+Balance Sheet Report:
+			
+			Shareholders\' Equity = Total Assets - Total Liabilities
+			Working Capital = Current Assets - Current Liabilities
+
+			Total Balance Sheet Report vai Raisul vai = Total Asset + Total Income - Total Expenses - Total Liabilities - Total Equity
+
+
+
+Profit Margin
+
+7.5: Profit Margin = Net income ÷ sales
+7.6: Operating Margin = Operating income ÷ net sales
+7.7: Interest Coverage Ratio = EBIT ÷ annual debt interest payments
+7.8: Price-Earnings Ratio = Market value per share ÷ earnings per share 
+7.9: Price-to-Book Ratio = Current closing price of stock ÷ book value per share.(Where book value = total assets - intangible assets and liabilities)
